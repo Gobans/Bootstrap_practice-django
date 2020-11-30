@@ -6,114 +6,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="../static/js/scripts.js"></script>
+
     <title>boiler_plate</title>
     <style>
       .form-body{
 
       }
+      .card{
+        align-items: center;
+      }
+
+      .card > img {
+        max-width: 100px; max-height: 100px;
+      }
+
+      i{
+        transition: all ease 2s;
+      }
+      i:hover{
+        transform: rotate(360deg);
+      }
+      
+      a:link { color: black; text-decoration: none;}
+      a:visited { color: black; text-decoration: none;}
+
     </style>
 </head>
 
 <body>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">Goban's portfolio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link js-scroll-trigger"" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link js-scroll-trigger" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item"> 
-              <a class="nav-link js-scroll-trigger"" href="#projects">Features</a>
+              <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger"" href="#form">Pricing</a>
+              <a class="nav-link js-scroll-trigger" href="#skill">Skill</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              <a class="nav-link js-scroll-trigger" href="#form">Contact</a>
             </li>
           </ul>
         </div>
     </nav>
     <!-- profile -->
     <header class="container d-flex align-items-center flex-column mb-5">
-        <img class="mb-5 img-fluid" src="../static/img/winter.jpg" alt="">
-        <h1>겨울이</h1>
+        <img class="mb-5 img-fluid" style="max-height: 300px; max-width: 300px;" src="../static/img/profile.jpg"alt="">
+        <h1>Goban</h1>
     </header>
+
+    <hr width="1000px">
+
     <!-- projects section -->
     <section id="projects">
         <div class="container">
-            <h1 class="text-center">Projects</h1>
+            <h1 class="text-center mb-5">Projects</h1>
             <div class="row">
                 <!-- projects item1 -->
                 <div class="col-md-6 col-lg-4 mb-5">
                     <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="../static/img/음표.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <h5 class="card-title">Random bgm site</h5>
+                          <p class="card-text">Randomly listen to crawling music on free music sites!</p>
+                          <a href="https://github.com/jaehoonkimm/likelion-crawling_bgm" target="_blank" class="btn btn-primary">Git Hub</a>
                         </div>
                       </div>
                 </div>
                 <!-- projects item2 -->
                 <div class="col-md-6 col-lg-4 mb-5">
                     <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="../static/img/sinmungo.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <h5 class="card-title">Lotte sinmungo</h5>
+                          <p class="card-text">Please share your complaints about Lotte</p>
+                          <a href="https://github.com/Gobans/Likelion-LotteSinmungo" class="btn btn-primary" target="_blank">Git Hub</a>
                         </div>
                       </div>
                 </div>
                 <!-- projects item3 -->
                 <div class="col-md-6 col-lg-4 mb-5">
                     <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="../static/img/shoppingcart.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
-                </div>
-                <!-- projects item4 -->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
-                </div>
-                <!-- projects item5 -->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
-                </div>
-                <!-- projects item6 -->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <h5 class="card-title">Easy shopping</h5>
+                          <p class="card-text">A price comparison program created with Google Extensions</p>
+                          <a href="https://github.com/Gobans/shopping-table" target="_blank" class="btn btn-primary">Git Hub</a>
                         </div>
                       </div>
                 </div>
@@ -121,6 +111,47 @@
 
         </div>
     </section>
+
+    <hr width="1000px">
+
+    <!--available programming skill -->
+    <section id="skill">
+      <div class="container text-center mb-5">
+        <h1 class="mb-4">Programming skill</h1>
+        <div class="row align-content-center">
+          <div class="col-md">
+            <i class="fab fa-react fa-5x"></i>
+                <p>React</p>
+          </div>
+
+          <div class="col-md">
+            <i class="fab fa-vuejs fa-5x""></i>
+            <p>Vue</p>
+          </div>
+
+          <div class="col-md">
+            <i class="fab fa-python fa-5x"></i>
+            <p>Python</p>
+          </div>
+
+          <div class="col-md">
+            <i class="fab fa-js fa-5x"></i>
+            <p>JS</p>
+          </div>
+
+          <div class="col-md">
+            <i class="fab fa-java fa-5x"></i>
+            <p>Java</p>
+          </div>
+
+        </div>
+      </div>
+
+
+    </section>
+
+        <hr width="1000px">
+
     <!-- Form -->
     <section id="form">
       <div class="container d-flex align-items-center flex-column mb-5">
@@ -142,13 +173,14 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-4 mb-5 mb-lg-0">
-            abouta
+
           </div>
           <div class="col-lg-4 mb-5 mb-lg-0">
-            aboutb
+            <a href="https://github.com/Gobans"><i style="transform: none;" class="fab fa-github fa-5x mr-3" href="https://github.com/Gobans"></i></a>
+            <a href="https://velog.io/@goban"><i style="transform: none;"  class="fab fa-vimeo-square fa-5x" href="https://github.com/Gobans" ></i></a>
           </div>
           <div class="col-lg-4 mb-5 mb-lg-0">
-            aboutc
+
           </div>
 
         </div>
